@@ -1,0 +1,28 @@
+<h1 class="text-center"> Item List</h1>
+<div class="row">
+    <div class="col-lg-3">
+        <button (click) = "additem();" class="btn btn-danger btn-sm mb-3"> Add Item</button>
+    </div> 
+</div>
+<table class="table table-dark table-bordered">
+    <thead>
+        <tr>
+            <th>Item Id</th>
+            <th>Item Name</th>
+            <th>Cost</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let item of items">
+            <td>{{item.itemId}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.cost}}</td>
+            <td>
+                <button (click)=" updateItem(item.itemId)" class="btn btn-info">Update</button>
+                <button (click)=" deleteItem(item.itemId)" class="btn btn-danger" style="margin-left: 10px;">DELETE</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
