@@ -3,6 +3,7 @@
 It is a Basic SpringBoot Application for order management system which uses angular for its front end part. 
 
 ## Angular 
+
 #####For going to Angular Page run the application & In browser Type:
 ```
   http://localhost:4200/
